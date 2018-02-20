@@ -36,8 +36,8 @@ class Application
       "Your cart is empty"
     else
       return @@cart.collect do |item|
-         "#{item}"
-      end.join('\n')
+         "#{item}\n"
+      end.join()
     end
   end
 end
