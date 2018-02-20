@@ -37,7 +37,7 @@ class Application
     else
       return @@cart.collect do |item|
          "#{item}"
-      end.join('n')
+      end.join('/\n')
     end
   end
 end
