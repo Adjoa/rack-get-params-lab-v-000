@@ -35,9 +35,9 @@ class Application
     if @@cart == []
       "Your cart is empty"
     else
-      @@cart.each do |item|
-        return "#{item}\n"
-      end
+      return @@cart.collect do |item|
+         "#{item}"
+      end.join('\n')
     end
   end
 end
