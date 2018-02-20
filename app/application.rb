@@ -18,7 +18,7 @@ class Application
       resp.write cart
     elsif req.path.match(/add/)
       item = req.params["item"]
-      resp.write add
+      resp.write add(item) 
     else
       resp.write "Path Not Found"
     end
